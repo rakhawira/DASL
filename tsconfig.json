@@ -1,0 +1,48 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": false,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitOverride": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "types"
+    ],
+    "types": [
+      "react"
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "nativewind-env.d.ts",
+    "types.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "node_modules/**/tsconfig.json",
+    "node_modules/expo-calendar/tsconfig.json",
+    "node_modules/expo-camera/tsconfig.json",
+    "node_modules/expo-image/tsconfig.json",
+    "node_modules/expo-modules-core/tsconfig.json",
+    "node_modules/expo/node_modules/expo-modules-core/tsconfig.json",
+    "node_modules/expo-modules-core",
+    "node_modules/expo-font",
+    "node_modules/@expo"
+  ]
+}
