@@ -1,0 +1,39 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t dasl-backend:latest .",
+    "docker:run": "docker-compose up -d --build",
+    "docker:stop": "docker-compose down",
+    "docker:logs": "docker-compose logs -f backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^8.0.0",
+    "axios": "^1.13.5",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "crypto": "^1.0.1",
+    "express": "^4.22.2",
+    "fs-extra": "^11.3.4",
+    "helmet": "^8.2.0",
+    "https": "^1.0.0",
+    "node-gyp-build": "^4.8.4",
+    "nodemon": "^3.1.14",
+    "pg": "^8.18.0",
+    "pm2": "^7.0.1",
+    "redis": "^5.12.1",
+    "socket.io": "^4.8.3",
+    "zod": "^4.4.3"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
+  }
+}
